@@ -1,0 +1,15 @@
+## D01 · 2026-10-20
+
+Quiz :
+1. What does input() return?
+    input() function is used to take input from user. by default is takes strings.
+2. What is an f-string?
+    f- string let u drop variables inside the string by using curly braces {}
+3. What does git commit save?
+    git commit save this message for the ease of users that this changes are commit for this purpose.
+    syntax- git commit "Hello!"
+
+   
+Built: diped my hands in python basics concepts like input()function, variables, #comment
+Confused by: a little stuck in while understanding different methods of taking inputs coz there ae too much 
+First step tomorrow: packed my bag with fundamental concept which carries me to tomorrow.
