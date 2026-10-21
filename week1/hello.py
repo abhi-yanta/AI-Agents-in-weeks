@@ -2,9 +2,16 @@
 # input name from user
 name = input("What is your name?")
 
+# OR
+
+name = input("What is your name?").strip().title()
+
 # print hello with name
 #print("Hello, " + name)
-print("Hello,", name)
+print("Hello,", name) 
+
+
+
 
 # .strip() removes spaces, tab and new line character from the beginning and end of the string
 print(name.strip())

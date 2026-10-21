@@ -1,0 +1,26 @@
+## D01 · 2026-10-20
+
+Quiz :
+
+1. In elif.py, the user enters x = 3 and y = 8. What does the program print?
+    x is less than y
+2. Same file, but x = 5 and y = 5. Which branch runs, and what prints?
+    third if branch which says 'x is equal to y'
+3. grade.py checks score >= 90 first, then elif score >= 80, then elif score >= 70. The score is 95. Why does it print Grade: 
+   A and skip the 80 and 70 lines, even though 95 >= 80 and 95 >= 70 are also true?
+    Grade: A coz code runs and check like first if branch will check and if it true then print, if its not true then only elif or else branch will check.
+4. What does this print when score is 95?
+    if score >= 60:
+        print("Grade: D")
+    elif score >= 90:
+        print("Grade: A")
+    else:
+        print("Grade: F")
+     Grade: D
+5. In mood_bot.py, the last branch is else, with no test after it. When does that print run?
+    When every test fails before that. Then after else branch will print its statement
+
+
+Built: Worked with different if/elif cases, good to see disadvantages of it 
+Confused by: a sort in range of variables 
+First step tomorrow: work on today's concept for better tomorrow.
