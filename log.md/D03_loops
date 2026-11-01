@@ -1,0 +1,34 @@
+## D01 · 2026-10-21
+
+Quiz :
+
+1. What does def reply(text): do? Why put the mood logic inside 
+   a function instead of only using print at the top of the file?
+
+     def names a reusable block. text is the input. A function can be
+     imported by tool_bot.py; top-level print cannot be reused as easily.    
+
+2. Why text = text.lower() once?
+
+     So every if compares lowercase. "Happy" and "happy" both match.
+
+3. "exam" in text vs text == "exam"?
+
+    in means the word appears anywhere. == needs an exact match. 
+    I have an exam tomorrow matches in, not ==.
+
+4. Why return instead of print?
+
+    return sends the sentence back to the caller. 
+    print(reply(feeling)) is what shows it.
+
+5. What is if __name__ == "__main__":?
+
+    That block runs only when you run mood_bot.py directly. 
+    Importing reply from tool_bot.py skips it, 
+    so the bot does not ask “How are you feeling?” twice.
+
+
+Built: Generated the mood_bot.py file.
+Confused by: in and == of loops.
+First step tomorrow: Dive deeper into loops and in and ==.
