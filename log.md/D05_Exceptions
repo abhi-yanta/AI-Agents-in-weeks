@@ -1,0 +1,33 @@
+## D01 · 2026-10-22
+
+ # QUIZ
+
+1. What is try / except for?
+
+try runs code that might fail. except runs only if that error happens. 
+int("cat") raises ValueError; your except ValueError prints x is not an integer instead of crashing.
+
+2. Why put print(f"x is {x}") in else, not inside try?
+
+else runs only when no error happened. If conversion fails, x was never created. 
+Printing x after a failed try would cause a NameError.
+
+3. What does except ValueError: pass do in pass.py?
+
+pass means “catch the error and do nothing.” The while True loop asks again. 
+The program does not crash, and it does not print a message.
+
+4. What does raise do? How is raise_for_status() related?
+
+raise starts an error on purpose, e.g. raise ValueError("age cannot be negative"). 
+response.raise_for_status() raises HTTPError if the web status is a failure (like 404). Success (200) raises nothing.
+
+5. In raise_error.py, when does except HTTPError run vs except Exception vs else?
+
+Bad GitHub URL → HTTPError → first except.
+Some other failure (network, etc.) → except Exception.
+Request worked → else → Success!
+
+Built: learned how to takkle different error ocuurs during taking inputs from users
+Confused by: raise method()
+First step tomorrow: clear all doubt regarding this topic
