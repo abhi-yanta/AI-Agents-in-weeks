@@ -1,0 +1,34 @@
+## D01 · 2026-10-22
+
+ # QUIZ
+
+1. What is a dictionary, and how do you read a value?
+
+A dictionary is a built-in, mutable data structure that stores data in key-value pairs, 
+where each key is unique and is used to access its corresponding value.
+
+2. What does with open("names.txt") as file: do?
+
+It opens the file, lets you read or write, then closes it when the block ends.
+"a" in Input2Csv.py means append (add to the end). Leave the mode off, and it reads.
+
+3. csv.reader vs csv.DictReader?
+
+reader gives a list per row: ["Harry", "Gryffindor"].
+DictReader uses the header as keys: {"name": "Harry", "home": "..."}. 
+Then you write row["name"].
+
+4. json.dumps vs json.load?
+
+json.dumps(dict) turns a Python dict into a JSON string.
+json.load(f) reads a JSON file into a Python dict. Then data["name"] works like any dict.
+
+5. Why can JSON keys look different from Python dict keys?
+
+JSON keys are always strings. {1: True} becomes '{"1": true}'. 
+Python True / False / None become JSON true / false / null.
+
+
+Built: work on dictionaries,I/O file operation, studied serializing and deserializing of Json file
+Confused by: stucked in different method of file I/O for optimization of code 
+First step tomorrow: aware of operation I/O on python file

@@ -8,8 +8,10 @@
         
         
 import random
+from weather import weather_for
 from datetime import datetime
 from mood_bot import reply
+
 
 
 def calc(expr):
@@ -46,7 +48,7 @@ def flip():
     return random.choice(["Heads", "Tails"])
 
 
-TOOLS = {"calc": calc, "time": now, "flip": flip}
+TOOLS = {"calc": calc, "time": now, "flip": flip, "weather": weather_for}
 
 
 def show_help():
@@ -65,7 +67,7 @@ while True:
     if text.startswith("/"):
         name, _, args = text[1:].partition(" ")
         if name in TOOLS:
-            if name == "calc":
+            if name in ("calc", "weather"):
                 print(TOOLS[name](args))
             else:
                 print(TOOLS[name]())

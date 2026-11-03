@@ -1,0 +1,19 @@
+[project]
+name = "ai-agents-8-weeks"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Abhinav Jaiswal", email = "2508410100001@recsonbhadra.ac.in" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "requests>=2.34.2",
+]
+
+[project.scripts]
+ai-agents-8-weeks = "ai_agents_8_weeks:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
