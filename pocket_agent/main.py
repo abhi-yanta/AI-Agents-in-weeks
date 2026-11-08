@@ -1,9 +1,13 @@
 from brain import think
 from tools import show_help
-
+import argparse
 
 def main():
-    print("Pocket AI Agent Started!")
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--name", default="User", help="Your name")
+    args = parser.parse_args()
+
+    print(f"Hello, {args.name}!")
     print("Type /help to see commands.")
     print("Type /quit to exit.")
 
