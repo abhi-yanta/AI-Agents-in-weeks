@@ -14,3 +14,8 @@ class Memory:
     def show_all(self):
         """Display everything stored in memory."""
         return self.data
+
+    
+
+
+print("Hello")
