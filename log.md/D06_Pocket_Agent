@@ -1,0 +1,28 @@
+## D01 · 2026-10-22
+
+# QUIZ
+
+1. Function--
+    Function in programming is some line of code with specific working 
+    and can be called at anywhere with file name and function_name(parameter)
+    import function_name from file_name
+
+2. Dictionary--
+    A dictionary in Python is a data structure that stores information in 
+    key:value pairs,using curly braces.
+
+3. JSON--
+    It is a python module which is used to store or transfer data mostly between a server and application.
+    It provides function to Serialize python objects into JSON strings.
+    also Deserialize-- vice-versa
+
+4. Exception--
+    In python,exception is an error detection during execution.
+    Error deteced are--
+    Zero Division Error
+    Name Error
+    Type Error
+
+Built: collect together all week project as uv project 
+Confused by: diverse function of managing files of uv project
+First step tomorrow: pack my bags for my first agent making
