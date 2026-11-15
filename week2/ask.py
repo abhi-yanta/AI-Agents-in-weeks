@@ -1,8 +1,8 @@
-
 import sys
 import time
 from dotenv import load_dotenv
 from google import genai
+from google.genai import types
 
 load_dotenv()
 
@@ -15,9 +15,12 @@ def ask_gemini(question):
     start_time = time.perf_counter()
 
     response = client.models.generate_content(
-        model=MODEL,
-        contents=question
+    model=MODEL,
+    contents=question,
+    config=types.GenerateContentConfig(
+        temperature=0.2
     )
+)
 
     elapsed = time.perf_counter() - start_time
 
