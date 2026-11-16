@@ -40,3 +40,5 @@ if __name__ == "__main__":
     else:
         question = " ".join(sys.argv[1:])
         ask_gemini(question)
+
+        print(ask_gemini)
